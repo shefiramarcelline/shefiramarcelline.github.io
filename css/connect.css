@@ -1,0 +1,164 @@
+
+.header {
+    width: 100%;
+    background-color: #ce9d9b;
+	background-size: cover;
+    background-position:10% 0%;
+}
+
+
+
+.header-content {
+	padding: 10rem 4.5rem;
+	min-height: 90vh;
+}
+
+#header-content-1{
+    float: left;
+    width: 50%;
+}
+#header-content-2{
+    float: left;
+    width: 50%;
+    padding: 6em 2em;
+}
+
+#header-image{
+    height: 800px;
+    object-fit: cover;
+}
+
+#header-content-2 > h1{
+    color: #2b5278;
+    font-size: 70px; 
+}
+
+#header-content-2 > p {
+    width: 300px;
+}
+
+.fill-button{
+    background-color: #2b5278;
+}
+.fill-button:hover{
+    background-color: #3a6896;
+}
+
+.connect-content{
+    background-color: #faf8f7;
+}
+.blank{
+    height: 200px;
+    background-color: #faf8f7;
+}
+#connect-content-1{
+    float: left;
+    padding: 2em 4.5em;
+    width: 50%;
+}
+#connect-content-2{
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 0em 4.5em;
+}
+
+#connect-content-2 > img{
+    height: 700px;
+    object-fit: cover;
+    transform: translateY(-45%);
+}
+
+.center{
+    text-align: center;
+}
+
+#address{    
+    transform: translateY(-125%);
+}
+
+#connect-content-1 > h1{
+    color: #2b5278;
+    font-size: 70px; 
+}
+::placeholder { 
+    color: #252322;
+    opacity: 1; 
+}
+:-ms-input-placeholder {
+    color: #252322;
+  }
+  
+  ::-ms-input-placeholder { 
+    color: #252322;
+  }
+
+input[type=text] {
+	width: 50%;
+	padding: 12px 10px;
+    margin: 15px 0;
+    border: none;
+	display: block;
+    box-sizing: border-box;
+    background-color: #f9ece7;
+}
+textarea {
+    resize: none;
+    border: none;
+    background-color: #f9ece7;
+    margin: 15px 0;
+}
+
+#connect-submit{
+    min-width: 200px;
+}
+
+@media screen and (max-width:800px){
+    p{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .header-content {
+        padding: 4rem 0rem;
+        height: 110vh;
+    }
+    
+    #header-content-2{
+        padding: 2em 2em;
+    }
+    #header-image{
+        height: 300px;
+        object-fit: cover;
+    }
+    #header-content-1, #header-content-2{
+        width: 100%;
+        display: block;
+        padding: 1em 2em;
+    }
+    #connect-content-1{
+        width: 100%;
+        padding: 2em 2em;
+        display: block;
+    }
+    #connect-content-2{
+        float: left;
+        text-align: center;
+        padding: 2em 2em;
+        width: 100%;
+        display: block;
+    }
+    
+    #connect-content-2 > img{
+        height: 300px;
+        object-fit: cover;
+        transform: translateY(0%);
+    }
+    
+    #address{    
+        transform: translateY(0%);
+    }
+
+    .blank{
+        height: 0;
+    }
+}

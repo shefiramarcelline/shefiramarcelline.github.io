@@ -1,0 +1,180 @@
+.rows {
+	max-width: 100vw;
+	margin: 0 auto;
+	display: grid;
+	background-color: #f9e0d7;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.rows>div {
+	padding: 10em 4em;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+}
+
+.header {
+	width: 100%;
+	background-image: url("../images/about\ us.jpg");
+	background-size: cover;
+    background-position:10% 0%;
+}
+
+.header-content {
+	padding: 15rem 4.5rem;
+	height: 100vh;
+	max-width: 500px;
+}
+
+.main-title {
+	color: #232B57 !important;
+}
+
+.about-us-button {
+	color: #fff;
+	background-color: #232B57;
+}
+
+.about-us-button:hover {
+	color: #fff;
+	background-color: rgb(56, 67, 133);
+}
+#our-mission-bg {
+	padding: 0px;
+}
+
+h1 {
+	color: #232B57 !important;
+	font-size: 80px;
+	line-height: 80px;
+}
+
+p {
+	color: #511617;
+}
+
+#vision {
+	padding-left: 15em;
+}
+
+#mission {
+	padding-right: 15em;
+}
+
+.blank {
+	height: 50px;
+}
+
+#team-header {
+	width: 100%;
+	background-color: #e4c472;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#team-header>h1 {
+	font-size: 60px;
+}
+
+.column {
+	float: left;
+	width: 33.333%;
+	padding: 2em 4.5em;
+}
+
+.column-2 {
+	float: left;
+	width: 50%;
+	padding: 2em 4.5em;
+}
+
+.column-2>.card {
+    height: 600px;
+    width: 600px;
+    background-color: #e1b3b1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.column-2>.card>.image {
+    height: 600px;
+    width: 600px;
+    object-position: 0% 0%;
+	object-fit: cover;
+}
+
+
+.card {
+    padding: 16px;
+}
+
+
+.card>.image {
+	height: 600px;
+	object-fit: cover;
+}
+.right{
+	float: right;
+	text-align: left;
+}
+
+
+@media screen and (max-width: 800px) {
+	.header-content{
+		padding: 12rem 2rem;
+	}
+	h1{
+		font-size: 50px;
+		line-height: 55px;
+	}
+	p{
+		font-size: 20px;
+		line-height: 25px;
+	}
+	.card > .image{
+		height: 100%;
+	}
+	#team-header > h1{
+		font-size: 45px;
+		line-height: 40px;
+	}
+	.column,
+	.column-2 {
+		width: 100%;
+		display: block;
+        margin-bottom: 20px;
+        padding-top: 0px;
+    }
+    .right{
+        float: left;
+        text-align: left;
+    }
+    .column-2 {
+        padding: 1em;
+		margin-bottom: 0px;
+    }
+    .column-2>.card {
+		height: 600px;
+		width: 100%;
+	}
+	#about-us-photo{
+		height: 400px;
+		padding: 0;
+	}
+    .column-2>.card>.image {
+		height: 400px;
+		width: 100%;
+    }
+	#mission,
+	#vision {
+        padding: 2em 2em;
+        float: left;
+	}
+	#working{
+		padding: 5em 2em !important;
+	}
+}
